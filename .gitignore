@@ -1,0 +1,25 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 构建中间产物（exe 通过 GitHub Release 分发，不进仓库）
+build*/
+dist*/
+spec*/
+*.spec
+
+# 运行时产生的敏感文件：含密码哈希 / 明文密码 / 会话数据
+# 这些绝不能提交，换机器后由程序首次运行自动生成
+config.json
+初始登录信息.txt
+
+# 日志与临时文件
+*.log
+_test_*.py
+*.tmp
+
+# 说明：port_monitor/server.crt 与 server.key 是内置自签证书，
+# 供源码运行 / 打包后开箱即用。此仓库为私有仓库故保留；
+# 若日后改为公开仓库，请删除这两个文件并移除上述例外，
+# 改为在设置中填写自己的证书路径。
